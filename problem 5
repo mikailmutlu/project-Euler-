@@ -1,0 +1,11 @@
+from math import gcd
+from functools import reduce
+
+# Function to calculate the least common multiple (LCM)
+def lcm(a, b):
+    return abs(a * b) // gcd(a, b)
+
+# Calculate the LCM of all numbers from 1 to 20
+result = reduce(lcm, range(1, 21))
+
+print("The smallest positive number evenly divisible by all numbers from 1 to 20 is:", result)

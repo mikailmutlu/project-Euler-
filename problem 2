@@ -1,0 +1,18 @@
+# Initialize variables for the first two terms of the Fibonacci sequence
+a, b = 1, 2
+
+# Initialize the sum of even-valued terms
+sum_even_terms = 0
+
+# Loop until the terms do not exceed four million
+while a <= 4000000:
+    # Check if the current term is even
+    if a % 2 == 0:
+        # Add the even term to the sum
+        sum_even_terms += a
+
+    # Update the Fibonacci sequence for the next iteration
+    a, b = b, a + b
+
+# Print the result
+print("The sum of even-valued terms in the Fibonacci sequence below 4 million is:", sum_even_terms)

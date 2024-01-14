@@ -1,0 +1,12 @@
+# Initialize the sum
+sum_multiples = 0
+
+# Loop through numbers below 1000
+for num in range(1000):
+    # Check if the number is a multiple of 3 or 5
+    if num % 3 == 0 or num % 5 == 0:
+        # Add the multiple to the sum
+        sum_multiples += num
+
+# Print the result
+print("The sum of all multiples of 3 or 5 below 1000 is:", sum_multiples)

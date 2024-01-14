@@ -1,0 +1,18 @@
+def largest_prime_factor(number):
+    # Initialize the divisor
+    divisor = 2
+    
+    while divisor * divisor <= number:
+        if number % divisor == 0:
+            number //= divisor
+        else:
+            divisor += 1
+
+    return number
+
+# The number for which we want to find the largest prime factor
+target_number = 600851475143
+
+# Find and print the largest prime factor
+result = largest_prime_factor(target_number)
+print("The largest prime factor of", target_number, "is:", result)
